@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <meta charset="UTF-8">
+  <title>Просто сайт с гдз</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+    <body>
+        <h1 id="h11" align="center"><strong>Здравствуйте!</strong></h1>
+        <p class="ph">Мы решили устроить небольшую проверку, дабы удостовериться что вы не учитель :)</p>
+        <p class="ph">Вы знаете что это?</p>
+        <p><img src="https://for-teacher.ru/edu/data/img/pic-023hcbfcrn-042.gif" height="100" width="300" alt="Иконка"></p>
+        <form>
+            <input type="radio" name="ans" value="yes" checked="checked"> Да! <br>
+            <input type="radio" name="ans" value="no"> Нет!<br>
+            <input type="submit" value="Выбрать" onclick="fun1()">
+        </form>
+        <script>
+            function fun1() {
+                var rad=document.getElementsByName('ans');
+                for (var i=0;i<rad.length; i++) {
+                    if (rad[i].checked) {
+                        if (i===1){
+                            window.open("/school_lol.html");
+                        }
+                    }
+                }
+            }
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
